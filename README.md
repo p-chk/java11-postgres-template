@@ -1,5 +1,5 @@
 
-# CHK - URL Shortener Service
+# CHK - Java 11 with Postgres Template
 
 ..
 
