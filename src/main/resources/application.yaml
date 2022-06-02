@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: java11-postgres-template
+  liquibase: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+---
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/java11-postgres-db
+    username: local
+    password: local
+logging:
+  level:
+    root: info
